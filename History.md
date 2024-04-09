@@ -14,3 +14,6 @@
 
 ## [0.0.5] - 2024-04-09
 - Change Doc link
+
+## [0.0.6] - 2024-04-09
+- Change Examples in README

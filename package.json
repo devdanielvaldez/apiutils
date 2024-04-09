@@ -1,6 +1,6 @@
 {
   "name": "apiutils.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A versatile tool to streamline API development in Node.js",
   "homepage": "https://apiutilsdoc.vercel.app/",
   "main": "index.js",
