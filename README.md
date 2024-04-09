@@ -14,8 +14,6 @@ Installation is done using the npm install command:
 $ npm install apiutils.js
 ```
 
-Follow our [installation guide](#) for more information.
-
 ## Features
 
 - **Token Generation & Manage**: Easy, fast and secure creation of tokens with high security standards for your API.
