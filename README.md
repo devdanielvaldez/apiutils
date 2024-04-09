@@ -1,6 +1,5 @@
 # [ApiUtils](https://apiutils.app/)
 
-[![NPM version][npm-version-image]][npm-url]
 [![MIT License][license-image]][license-url]
 
 A versatile tool to streamline API development in Node.js
@@ -25,10 +24,3 @@ ApiUtils is freely distributable under the terms of the [MIT license][license-ur
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
-
-[npm-url]: https://npmjs.org/package/moment
-[npm-version-image]: https://img.shields.io/npm/v/moment.svg?style=flat
-
-
-[semver-image]: https://api.dependabot.com/badges/compatibility_score?dependency-name=moment&package-manager=npm_and_yarn&version-scheme=semver
-[semver-url]: https://dependabot.com/compatibility-score.html?dependency-name=moment&package-manager=npm_and_yarn&version-scheme=semver

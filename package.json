@@ -1,5 +1,5 @@
 {
-  "name": "ApiUtils",
+  "name": "apiutils.js",
   "version": "0.0.1",
   "description": "A versatile tool to streamline API development in Node.js",
   "homepage": "https://apiutils.app",
