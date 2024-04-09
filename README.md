@@ -1,26 +1,51 @@
-# [ApiUtils](https://apiutils.app/)
+# ApiUtils
 
-[![MIT License][license-image]][license-url]
+A comprehensive utility library for building and enhancing APIs in Node.js.
 
-A versatile tool to streamline API development in Node.js
+## Installation
 
-## Project Status
+This is a Node.js module available through the npm registry. Before installing, download and install [Node.js](https://nodejs.org/en/download/). Node.js 14 or higher is required.
 
-ApiUtils is a project developed from scratch using third parties as little as possible.
+If this is a new project, make sure to create a `package.json` first with the `npm init` command.
 
-For more details and recommendations, please see [Project Status](https://apiutils.app/docs/project-status/) in the docs.
+Installation is done using the npm install command:
 
-*Thank you.*
+```bash
+$ npm install apiutils.js
+```
 
-## Resources
+Follow our [installation guide](#) for more information.
 
-- [Documentation](https://apiutils.app/docs/)
-- [Changelog](CHANGELOG.md)
+## Features
+
+- **Token Generation & Manage**: Easy, fast and secure creation of tokens with high security standards for your API.
+- **Password Manage**: Password generation, password comparison and rule validation when registering a hash.
+- **Internationalization (i18n) Management**: Managing your response messages in multiple languages ​​more effectively
+- **Process Monitoring**: Real-time visualization of the processes executed by your API, number of requests executed, execution times and more...
+- **Response Compression**: Compression of the responses sent by your API to the client to make faster transactions
+
+## Documentation
+
+For detailed usage and examples, check out the [documentation](#).
+
+## Quick Start
+
+Here's a quick example to get you started:
+
+```javascript
+const { generateCert } = require('apiutils.js');
+
+const cert = generateCert();
+```
+
+## Contributing
+
+We welcome contributions from the community! Whether it's bug fixes, new features, or improvements to the documentation, feel free to submit a pull request. Check out our [contributing guidelines](CONTRIBUTING.md) for more information.
+
+## Security
+
+If you discover any security vulnerabilities, please report them via [email](mailto:hello@daniel-valdez.com.com). We take security seriously and appreciate your help in keeping our library safe.
 
 ## License
 
-ApiUtils is freely distributable under the terms of the [MIT license][license-url].
-
-
-[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-[license-url]: LICENSE
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
