@@ -2,6 +2,7 @@
   "name": "ApiUtils",
   "version": "0.0.1",
   "description": "A versatile tool to streamline API development in Node.js",
+  "homepage": "https://apiutils.app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,7 @@
     "utilities",
     "middleware"
   ],
+  "main": "index.js",
   "author": "Daniel Valdez <hello@daniel-valdez.com> (https://github.com/devdanielvaldez)",
   "license": "MIT",
   "dependencies": {
