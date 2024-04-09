@@ -11,3 +11,6 @@
 
 ## [0.0.4] - 2024-04-09
 - Automatic detection of the i18n folder in the project
+
+## [0.0.5] - 2024-04-09
+- Change Doc link

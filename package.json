@@ -1,8 +1,8 @@
 {
   "name": "apiutils.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A versatile tool to streamline API development in Node.js",
-  "homepage": "https://apiutils.app",
+  "homepage": "https://apiutilsdoc.vercel.app/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
