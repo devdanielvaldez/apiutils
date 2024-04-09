@@ -1,0 +1,24 @@
+{
+  "name": "ApiUtils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "csurf": "^1.11.0",
+    "helmet": "^7.1.0",
+    "xss": "^1.0.15",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8.57.0"
+  }
+}
