@@ -24,7 +24,7 @@ $ npm install apiutils.js
 
 ## Documentation
 
-For detailed usage and examples, check out the [documentation](#).
+For detailed usage and examples, check out the [documentation](https://apiutilsdoc.vercel.app/).
 
 ## Quick Start
 
