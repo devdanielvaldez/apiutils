@@ -17,3 +17,6 @@
 
 ## [0.0.6] - 2024-04-09
 - Change Examples in README
+
+## [0.0.7] - 2024-04-11
+- Add ValidateBodys feature

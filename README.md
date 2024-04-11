@@ -220,6 +220,62 @@ app.listen(3000, () => {
 });
 ```
 
+### Generate JSON Schema for Validate Body's and Query's
+
+The following code shows the implementation process for the validation of body's and query's in your API requests
+
+#### Generate Schemas
+
+```yaml
+userSchema:
+  type: object
+  properties:
+    username:
+      type: string
+    email:
+      type: string
+      format: email
+    age:
+      type: number
+      minimum: 0
+  required:
+    - username
+    - email
+```
+
+```bash
+npx create-schema
+```
+
+#### Implement corresponding Middleware in the routes
+
+```javascript
+// app.js
+const express = require('express');
+const { validateBodyReq, validateQuerysReq } = require('apiutils.js');
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extends: true }))
+
+app.get('/query', validateQuerysReq('querySchema'), (req, res) => {
+    res.status(200).json({
+        ok: true
+    });
+});
+
+app.post('/body', validateBodyReq('userSchema'), (req, res) => {
+    console.log(req.body);
+    res.status(200).json({
+        ok: true
+    });
+});
+
+app.listen(3000, () => {
+    console.log('api running');
+});
+```
+
 ## Contributing
 
 We welcome contributions from the community! Whether it's bug fixes, new features, or improvements to the documentation, feel free to submit a pull request. Check out our [contributing guidelines](CONTRIBUTING.md) for more information.
