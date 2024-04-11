@@ -18,6 +18,10 @@ const {
 const {
     compressResponse
 } = require('./compress/index');
+const {
+    validateBodyReq,
+    validateQuerysReq
+} = require('./validateBodys');
 
 module.export = {
     generateCert,
@@ -29,5 +33,7 @@ module.export = {
     decrypt,
     i18n_msg_manage,
     processMonitoring,
-    compressResponse
+    compressResponse,
+    validateBodyReq,
+    validateQuerysReq
 }
