@@ -21,6 +21,7 @@ $ npm install apiutils.js
 - **Internationalization (i18n) Management**: Managing your response messages in multiple languages ​​more effectively
 - **Process Monitoring**: Real-time visualization of the processes executed by your API, number of requests executed, execution times and more...
 - **Response Compression**: Compression of the responses sent by your API to the client to make faster transactions
+- **Schemas Validators**: Generate schemas for your requests and validate the validity of the body's and query's
 
 ## Documentation
 
