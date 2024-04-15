@@ -277,6 +277,56 @@ app.listen(3000, () => {
 });
 ```
 
+### Encrypt API Responses and Requests
+
+The following code presents how to encrypt the API responses and decrypt the information received in the API
+
+#### Generate apiKey
+
+```bash
+npx generate-key
+```
+
+#### Implement corresponding Middleware in app
+
+```javascript
+const express = require('express');
+const cors = require('cors');
+const { encryptResponse, decryptRequest } = require('apiutils.js');
+
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extends: true }));
+app.use(cors());
+
+app.use(encryptResponse);
+app.use(decryptRequest);
+
+
+app.get('/test', (req, res) => {
+    res.status(200).json({
+        ok: true,
+        msg: "Test",
+        personalInfo: {
+            name: "John",
+            lastName: "Smith",
+            age: 23
+        }
+    })
+});
+
+app.post('/test', (req, res) => {
+    res.status(200).json({
+        ok: true,
+        data: "MSG"
+    })
+})
+
+app.listen(4000, () => {
+    return console.log('api running');
+});
+```
+
 ## Contributing
 
 We welcome contributions from the community! Whether it's bug fixes, new features, or improvements to the documentation, feel free to submit a pull request. Check out our [contributing guidelines](CONTRIBUTING.md) for more information.

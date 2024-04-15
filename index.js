@@ -22,6 +22,10 @@ const {
     validateBodyReq,
     validateQuerysReq
 } = require('./validateBodys');
+const {
+    encryptResponse,
+    decryptRequest
+} = require('./secureReqRes/index');
 
 module.export = {
     generateCert,
@@ -35,5 +39,7 @@ module.export = {
     processMonitoring,
     compressResponse,
     validateBodyReq,
-    validateQuerysReq
+    validateQuerysReq,
+    encryptResponse,
+    decryptRequest
 }
