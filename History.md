@@ -23,3 +23,6 @@
 
 ## [0.0.8] - 2024-04-14
 - Implement encryption and decryption of responses and API requests
+
+## [0.0.9] - 2024-04-15
+- Implement generate json-mocks
