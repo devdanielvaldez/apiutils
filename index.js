@@ -26,6 +26,9 @@ const {
     encryptResponse,
     decryptRequest
 } = require('./secureReqRes/index');
+const {
+    _generateMocks
+} = require('./json-mocks/index');
 
 module.export = {
     generateCert,
@@ -41,5 +44,6 @@ module.export = {
     validateBodyReq,
     validateQuerysReq,
     encryptResponse,
-    decryptRequest
+    decryptRequest,
+    _generateMocks
 }

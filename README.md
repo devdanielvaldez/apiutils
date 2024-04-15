@@ -326,6 +326,80 @@ app.listen(4000, () => {
     return console.log('api running');
 });
 ```
+### Generate JSON Mocks from JSON Schema
+
+This module will help you generate mocks through AI based on your JSON Schema which you can generate using our module for this task that you will see above.
+
+#### Create file for mock generation
+
+Create a file anywhere in your project where you will invoke the _generateMocks function
+
+JSON Schema
+```yaml
+{
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "age": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "username",
+    "email"
+  ]
+}
+```
+
+JavaScript File
+
+```javascript
+// mock.js
+const { _generateMocks } = require('apiutils.js');
+
+_generateMocks('userSchema', 5);
+```
+
+Response
+
+```json
+[
+  {
+    "username": "JohnDoe",
+    "email": "johndoe@example.com",
+    "age": 30
+  },
+  {
+    "username": "JaneDoe",
+    "email": "janedoe@example.com",
+    "age": 25
+  },
+  {
+    "username": "BobSmith",
+    "email": "bobsmith@example.com",
+    "age": 40
+  },
+  {
+    "username": "AliceJohnson",
+    "email": "alicejohnson@example.com",
+    "age": 35
+  },
+  {
+    "username": "TomJackson",
+    "email": "tomjackson@example.com",
+    "age": 28
+  }
+]
+```
+
+This mock will automatically be saved in your schema-validators folder, then you can move it to any other directory
 
 ## Contributing
 
