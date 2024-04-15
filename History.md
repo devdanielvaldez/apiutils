@@ -26,3 +26,6 @@
 
 ## [0.0.9] - 2024-04-15
 - Implement generate json-mocks
+
+## [0.1.0] - 2024-04-15
+- Implement Cron Utils

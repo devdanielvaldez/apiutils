@@ -29,6 +29,15 @@ const {
 const {
     _generateMocks
 } = require('./json-mocks/index');
+const {
+    everyMinute,
+    everyHour,
+    everyDay,
+    everyDayAt,
+    everyDayWeek,
+    everyWeekend,
+    every
+} = require('./cron-utils/index');
 
 module.export = {
     generateCert,
@@ -45,5 +54,12 @@ module.export = {
     validateQuerysReq,
     encryptResponse,
     decryptRequest,
-    _generateMocks
+    _generateMocks,
+    everyMinute,
+    everyHour,
+    everyDay,
+    everyDayAt,
+    everyDayWeek,
+    everyWeekend,
+    every
 }
