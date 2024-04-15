@@ -401,6 +401,64 @@ Response
 
 This mock will automatically be saved in your schema-validators folder, then you can move it to any other directory
 
+### Cron-Utils
+
+The cron-utils module within apiutils.js provides utilities for scheduling tasks to run at specific intervals. It allows you to easily schedule tasks to run every few seconds, minutes, or hours.
+
+#### Usage
+
+To use cron-utils, import the library into your project:
+
+```javascript
+const { every, everyHour, ... } = require('apiutils.js');
+```
+
+```javascript
+const { 
+    everyMinute,
+    everyHour,
+    everyDay,
+    everyDayAt,
+    everyDayWeek,
+    everyWeekend,
+    every
+ } = require('apiutils.js');
+
+ function printHelloWorld() {
+  console.log('Hello World!');
+ }
+
+ // Run every minute
+ everyMinute(printHelloWorld);
+
+  // Run every hour
+ everyHour(printHelloWorld);
+
+ // Run every day
+ everyDay(printHelloWorld);
+
+ // Run every day at
+ everyDayAt(printHelloWorld, { hours: 15, minutes: 30 });
+
+ // Run every day at
+ everyDayWeek(printHelloWorld, { hours: 15, minutes: 30 });
+
+ // Run every day week
+ everyDayWeek(printHelloWorld, 'sunday'); // 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'
+
+ // Run every weekend
+ everyDayWeek(printHelloWorld, { hours: 15, minutes: 30 });
+
+ // Run every X number of minutes
+ every(5).minutes(printHelloWorld);
+
+ // Run every X number of seconds
+ every(40).seconds(printHelloWorld);
+
+ // Run every X number of hours
+ every(3).hours(printHelloWorld);
+```
+
 ## Contributing
 
 We welcome contributions from the community! Whether it's bug fixes, new features, or improvements to the documentation, feel free to submit a pull request. Check out our [contributing guidelines](CONTRIBUTING.md) for more information.
