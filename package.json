@@ -1,31 +1,33 @@
 {
   "name": "apiutils.js",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "A versatile tool to streamline API development in Node.js",
   "homepage": "https://apiutilsdoc.vercel.app/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create-schema": "node ./validateBodys/create-schemas.js"
+    "create-schema": "node ./validateBodys/create-schemas.js",
+    "generate-key": "node ./secureReqRes/apiKeyManagement.js"
   },
   "keywords": [
     "API",
     "utilities",
     "middleware"
   ],
-  "main": "index.js",
   "author": "Daniel Valdez <hello@daniel-valdez.com> (https://github.com/devdanielvaldez)",
   "license": "MIT",
   "dependencies": {
-    "helmet": "^7.1.0",
+    "colors": "^1.4.0",
+    "crypto-js": "^4.2.0",
     "csurf": "^1.11.0",
-    "xss": "^1.0.15",
-    "js-yaml": "^4.1.0"
+    "helmet": "^7.1.0",
+    "js-yaml": "^4.1.0",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
     "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.6.0"
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8.57.0"
   },
   "engines": {
     "node": ">=14"
@@ -33,7 +35,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/devdanielvaldez/apiutils"
-},
+  },
   "bugs": {
     "url": "https://github.com/devdanielvaldez/apiutils/issues"
   }

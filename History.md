@@ -20,3 +20,6 @@
 
 ## [0.0.7] - 2024-04-11
 - Add ValidateBodys feature
+
+## [0.0.8] - 2024-04-14
+- Implement encryption and decryption of responses and API requests
