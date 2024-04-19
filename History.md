@@ -29,3 +29,6 @@
 
 ## [0.1.0] - 2024-04-15
 - Implement Cron Utils
+
+## [0.1.1] - 2024-04-19
+- Implement fix in import tokenVerify and fix in validateBodys

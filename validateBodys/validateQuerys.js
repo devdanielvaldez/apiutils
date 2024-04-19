@@ -29,6 +29,13 @@ function findSchemas(dir) {
 const rootDir = path.resolve(__dirname, '..');
 
 const schemasDir = findSchemasDir(rootDir);
+
+// Verifica si schemasDir es null
+if (!schemasDir) {
+    console.error('El directorio de esquemas es nulo.');
+    process.exit(1); // Termina el proceso con un código de error
+}
+
 const schemaFiles = findSchemas(schemasDir);
 
 const schemas = {};

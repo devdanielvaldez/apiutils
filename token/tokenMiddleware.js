@@ -1,4 +1,4 @@
-const tokenVerifier = require('./tokenVerifier');
+const tokenVerifier = require('./tokenVerify');
 
 function getTokenFromHeaders(req) {
   const authorizationHeader = req.headers['authorization'];
